@@ -1,0 +1,30 @@
+spring:
+  resources:
+    static-locations: classpath:/
+  freemarker:
+    template-loader-path: classpath:/templates/
+    suffix: .html
+    content-type: text/html
+    charset: UTF-8
+  datasource:
+      url: jdbc:mysql://localhost:3306/testUser
+      username: root
+      password: 123_root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      show-sql: true
+
+logging:
+  level:
+    ROOT: DEBUG
+
+server:
+  port: 8083
+  error:
+    whitelabel:
+      enabled: true
+
+
+
+
